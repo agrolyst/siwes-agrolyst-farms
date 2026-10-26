@@ -258,7 +258,7 @@ svg{display:block;max-width:100%;overflow:visible}
 <script type="module">
 import{createClient}from"https://esm.sh/@supabase/supabase-js@2.49.1";
 const sb=createClient("https://orhlccyodjuhwoaelmyd.supabase.co","sb_publishable_3HEzwj5aGJx3VOQD7l8jwQ_MngS3dcK",{auth:{autoRefreshToken:true,persistSession:true,detectSessionInUrl:true}});
-const root=document.getElementById("app");let user=null,mode="login",appRow=null,adminRows=[];
+const root=document.getElementById("app");let user=null,mode="login",appRow=null,adminRows=[],revealObserver=null;
 const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const states={compliance_incomplete:"Compliance incomplete",under_review:"Under review",changes_requested:"Changes requested",approved:"Approved — letter not issued",rejected:"Not approved",acceptance_letter_issued:"Acceptance letter issued",resumption_confirmed:"Resumption confirmed",training_in_progress:"Training in progress",completed:"Completed"};
 const stages=[["compliance_incomplete","Complete profile and compliance"],["under_review","Application under review"],["changes_requested","Corrections requested"],["approved","Application approved"],["acceptance_letter_issued","Acceptance letter issued"],["resumption_confirmed","Resumption confirmed"],["training_in_progress","Training in progress"],["completed","Training completed"]];
