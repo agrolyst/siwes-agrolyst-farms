@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123d2b">
+<meta name="description" content="Access the Agrolyst SIWES applicant portal.">
+<title>Sign In | Agrolyst SIWES Portal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--green:#123d2b;--green2:#1e6545;--lime:#d8edaa;--ink:#17251d;--muted:#6b786f;--line:#e2e9e3}*{box-sizing:border-box}body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:#f4f7f2;min-height:100vh;display:grid;place-items:center;padding:22px}.auth-shell{width:min(1050px,100%);min-height:650px;display:grid;grid-template-columns:1.02fr .98fr;background:#fff;border-radius:26px;overflow:hidden;box-shadow:0 28px 90px #123d2b20;animation:rise .65s ease both}.story{position:relative;min-height:650px;background:#123d2b url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=85") center/cover no-repeat;color:#fff;display:flex;align-items:flex-end;padding:42px}.story:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0b2b1a35,#092819e8)}.story-content{position:relative;z-index:1}.brand{font:800 18px Manrope,sans-serif;letter-spacing:1.8px}.brand span{color:var(--lime)}.eyebrow{display:inline-flex;border:1px solid #ffffff70;border-radius:99px;padding:8px 12px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:18px}.story h1{font:800 clamp(30px,3.7vw,46px)/1.12 Manrope,sans-serif;letter-spacing:-1.5px;margin:0 0 16px;max-width:450px}.story p{color:#e0ebe3;line-height:1.75;max-width:410px;margin:0}.form-side{padding:clamp(28px,5vw,58px);display:flex;flex-direction:column;justify-content:center}.form-side h2{font:800 30px Manrope,sans-serif;letter-spacing:-.8px;margin:0 0 9px}.intro{color:var(--muted);line-height:1.6;margin:0 0 27px}.field{display:block;margin:0 0 16px}.field span{display:block;font-size:13px;font-weight:700;margin-bottom:8px}.field input{width:100%;border:1px solid var(--line);border-radius:12px;padding:14px 15px;font:inherit;outline:none;background:#fcfdfb;transition:border .2s,box-shadow .2s}.field input:focus{border-color:#347753;box-shadow:0 0 0 4px #34775317}.password-wrap{display:flex;gap:8px}.password-wrap input{flex:1;min-width:0}.show-pass{border:1px solid var(--line);background:#fff;border-radius:12px;padding:0 12px;color:var(--green);font-weight:700;cursor:pointer}.primary{width:100%;border:0;border-radius:12px;background:var(--green);color:white;padding:15px 18px;font:700 14px Manrope,sans-serif;cursor:pointer;transition:transform .2s,background .2s}.primary:hover{background:var(--green2);transform:translateY(-1px)}.primary:disabled{opacity:.65;cursor:wait;transform:none}.or{display:flex;align-items:center;gap:12px;color:#89948c;font-size:12px;margin:20px 0}.or:before,.or:after{content:"";height:1px;background:var(--line);flex:1}.google{width:100%;display:flex;align-items:center;justify-content:center;gap:11px;background:white;border:1px solid var(--line);border-radius:12px;padding:13px 15px;font:700 13px "DM Sans",sans-serif;cursor:pointer}.google:hover{background:#f8faf7}.google svg{width:18px;height:18px}.foot{font-size:13px;text-align:center;color:var(--muted);margin:23px 0 0}.foot a,.back a{color:var(--green2);font-weight:800;text-decoration:none}.foot a:hover,.back a:hover{text-decoration:underline}.message{display:none;border-radius:10px;padding:12px 13px;font-size:13px;line-height:1.5;margin:0 0 16px}.message.error{display:block;background:#fff0ed;color:#a12c1e}.message.success{display:block;background:#eef8ed;color:#23613a}.fineprint{font-size:11px;color:#89948c;text-align:center;line-height:1.6;margin:16px 0 0}.back{font-size:12px;margin-top:24px;text-align:center;color:var(--muted)}@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}@media(max-width:760px){body{padding:12px}.auth-shell{grid-template-columns:1fr;min-height:0;border-radius:20px}.story{min-height:240px;padding:25px}.story h1{font-size:30px;max-width:500px}.story p{font-size:13px}.form-side{padding:28px 22px 30px}.form-side h2{font-size:26px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main class="auth-shell">
+<aside class="story"><div class="story-content"><div class="brand">AGROLYST <span>SIWES</span></div><div style="height:34px"></div><div class="eyebrow">Applicant portal</div><h1>Build your future in agriculture.</h1><p>Manage your SIWES application, keep your information in one place, and follow your next steps with Agrolyst.</p></div></aside>
+<section class="form-side">
+<div class="eyebrow" style="border-color:#dce8dc;color:#35714e;margin-bottom:16px">AGROLYST INTEGRATED FARMS</div>
+<h2>Welcome back</h2><p class="intro">Sign in to continue to your SIWES applicant dashboard.</p>
+<div id="message" class="message" role="status" aria-live="polite"></div>
+<form id="auth-form">
+
+<label class="field"><span>Email address</span><input id="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+<label class="field"><span>Password</span><div class="password-wrap"><input id="password" type="password" autocomplete="current-password" minlength="6" placeholder="At least 6 characters" required><button class="show-pass" type="button" id="toggle-pass">Show</button></div></label>
+
+<button class="primary" id="submit" type="submit">Sign in</button>
+</form>
+<div class="or">or continue with</div>
+<button class="google" type="button" id="google"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 3.56 13.22l7.98 6.19C13.43 13.72 18.2 9.5 24 9.5z" transform="translate(0 4)"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.76 7.18l7.73 6C44.42 38.06 46.98 31.84 46.98 24.55z"/><path fill="#FBBC05" d="M11.53 28.59A14.4 14.4 0 0 1 10.75 24c0-1.59.27-3.13.76-4.59l-7.98-6.19A23.9 23.9 0 0 0 1 24c0 3.87.93 7.54 2.56 10.78l7.97-6.19z" transform="translate(0 4)"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.9-5.8l-7.73-6c-2.14 1.44-4.89 2.3-8.17 2.3-5.8 0-10.57-4.22-12.46-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z" transform="translate(0 -2)"/></svg>Continue with Google</button>
+<p class="foot">New to the portal? <a href="/signup.html">Create an account</a></p><p class="fineprint">Your account information is handled securely. Only use details you can access.</p><div class="back"><a href="/">← Back to SIWES portal</a></div>
+</section>
+</main>
+<script type="module">
+import { createClient } from "https://esm.sh/@supabase/supabase-js@2.49.1";
+const sb = createClient("https://orhlccyodjuhwoaelmyd.supabase.co","sb_publishable_3HEzwj5aGJx3VOQD7l8jwQ_MngS3dcK",{auth:{autoRefreshToken:true,persistSession:true,detectSessionInUrl:true}});
+const signup = false;
+const form = document.getElementById("auth-form"), submit = document.getElementById("submit"), message = document.getElementById("message");
+function showMessage(text,kind="error"){message.textContent=text;message.className="message "+kind}
+document.getElementById("toggle-pass").addEventListener("click",()=>{const p=document.getElementById("password"),b=document.getElementById("toggle-pass");p.type=p.type==="password"?"text":"password";b.textContent=p.type==="password"?"Show":"Hide"});
+form.addEventListener("submit",async e=>{e.preventDefault();submit.disabled=true;submit.textContent=signup?"Creating account…":"Signing in…";message.className="message";try{const email=document.getElementById("email").value.trim(),password=document.getElementById("password").value;let result;if(signup){const fullName=document.getElementById("full-name").value.trim();result=await sb.auth.signUp({email,password,options:{data:{full_name:fullName},emailRedirectTo:location.origin+"/dashboard/"}})}else{result=await sb.auth.signInWithPassword({email,password})}if(result.error)throw result.error;if(signup&&!result.data.session){showMessage("Account created. Check your email to confirm your address, then sign in.","success");submit.textContent="Account created";return}location.href="/dashboard/"}catch(err){showMessage(err.message||"Unable to continue. Please try again.");submit.disabled=false;submit.textContent=signup?"Create account":"Sign in"}})
+document.getElementById("google").addEventListener("click",async()=>{const b=document.getElementById("google");b.disabled=true;try{const{error}=await sb.auth.signInWithOAuth({provider:"google",options:{redirectTo:location.origin+"/dashboard/"}});if(error)throw error}catch(err){showMessage(err.message||"Google sign-in could not start.");b.disabled=false}});
+sb.auth.getSession().then(({data})=>{if(data.session)location.replace("/dashboard/")});
+</script>
+</body>
+</html>
