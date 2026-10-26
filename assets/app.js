@@ -1,0 +1,1 @@
+console.log('SIWES portal loaded');
